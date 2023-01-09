@@ -1,0 +1,192 @@
+@font-face {
+	font-family: 'ReformaGroteskLightC';
+	src: url('../fonts/ReformaGroteskLightC.eot');
+	src: local('ReformaGroteskLightC'),
+		url('../fonts/ReformaGroteskLightC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ReformaGroteskLightC.woff') format('woff'),
+		url('../fonts/ReformaGroteskLightC.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ReformaGroteskMediumC';
+	src: url('../fonts/ReformaGroteskMediumC.eot');
+	src: local('ReformaGroteskMediumC'),
+		url('../fonts/ReformaGroteskMediumC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ReformaGroteskMediumC.woff') format('woff'),
+		url('../fonts/ReformaGroteskMediumC.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ReformaGroteskDemiC';
+	src: url('../fonts/ReformaGroteskDemiC.eot');
+	src: local('ReformaGroteskDemiC'),
+		url('../fonts/ReformaGroteskDemiC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ReformaGroteskDemiC.woff') format('woff'),
+		url('../fonts/ReformaGroteskDemiC.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ReformaGroteskBoldC';
+	src: url('../fonts/ReformaGroteskBoldC.eot');
+	src: local('ReformaGroteskBoldC'),
+		url('../fonts/ReformaGroteskBoldC.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ReformaGroteskBoldC.woff') format('woff'),
+		url('../fonts/ReformaGroteskBoldC.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+.wrapper{
+    position: fixed;
+    width: 1920px;
+    height: 1000px;
+    left: 0;
+    top: 0;
+}
+
+/* Header styles start */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header__info{
+    position: absolute;
+    width: 521px;
+    height: 29px;
+    left: 312px;
+    top: 40px;
+}
+.header__list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.header__item{
+    margin-right: 40px;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link{
+    font-family: 'ReformaGroteskMediumC';
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header__lines {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    left: 1558px;
+    top: 40px;
+}
+
+/* Header styles end */
+
+
+/* Intro styles start */
+
+.intro{
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%), url(../img/background.jpeg);
+    background-size: cover;
+    text-align: center;
+}
+.intro__title{
+    position: absolute;
+    width: 483px;
+    height: 188px;
+    left: 719px;
+    top: 237px;
+    font-family: 'ReformaGroteskBoldC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 125%;
+    color: #DB3138;
+    }
+.intro__rhombs {
+    position: absolute;
+    width: 146px;
+    height: 14px;
+    left: 887px;
+    top: 430px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.intro__subtitle{
+    position: absolute;
+    width: 437px;
+    height: 96px;
+    left: 742px;
+    top: 486px;
+    font-family: 'ReformaGroteskMediumC';
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.intro__button {
+    position: absolute;
+    width: 144px;
+    height: 61px;
+    left: 888px;
+    top: 622px;
+    font-family: "ReformaGroteskDemiC";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #DB3138;
+    border: none;
+}
+
+/* Intro styles end */
+
+
+/* Inform styles start */
+
+.inform {
+    width: 100%;
+}
+.inform__block {
+    display: inline-block;
+    border-top: solid 1px rgba(255, 255, 255, 0.5);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+    font-family: "ReformaGroteskDemiC";
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    width: 33%;
+}
+.inform__block-bordered {
+  border-right: solid 1px rgba(255, 255, 255, 0.5);
+  border-left: solid 1px rgba(255, 255, 255, 0.5);
+}
+.inform__block-title {
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.inform__block-text {
+    font-size: 24px;
+    line-height: 140%;
+    color: #DB3138;
+}
+
+/* Inform styles end */

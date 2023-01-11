@@ -8,7 +8,6 @@
 	font-weight: 300;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'ReformaGroteskMediumC';
 	src: url('../fonts/ReformaGroteskMediumC.eot');
@@ -19,7 +18,6 @@
 	font-weight: 500;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'ReformaGroteskDemiC';
 	src: url('../fonts/ReformaGroteskDemiC.eot');
@@ -30,7 +28,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'ReformaGroteskBoldC';
 	src: url('../fonts/ReformaGroteskBoldC.eot');
@@ -42,108 +39,76 @@
 	font-style: normal;
 }
 
-.wrapper{
-    position: fixed;
-    width: 1920px;
-    height: 1000px;
-    left: 0;
-    top: 0;
+.rhomb-position {
+    margin-right: 30px;
+}
+
+
+/* Section-first styles start */
+.section-first {
+    max-width: 1920px;
+    min-height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%), url(../img/background.jpeg);
+    background-size: cover;
+    text-align: center;
 }
 
 /* Header styles start */
-
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.header__info{
-    position: absolute;
-    width: 521px;
-    height: 29px;
-    left: 312px;
-    top: 40px;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 .header__list{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    margin: 0;
 }
 .header__item{
+    display: inline-block;
     margin-right: 40px;
-}
-.header__item:last-child{
-    margin-right: 0;
 }
 .header__link{
     font-family: 'ReformaGroteskMediumC';
     font-size: 24px;
     line-height: 120%;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     text-decoration: none;
 }
-.header__lines {
-    position: absolute;
-    width: 50px;
-    height: 25px;
-    left: 1558px;
-    top: 40px;
-}
-
 /* Header styles end */
 
-
 /* Intro styles start */
-
-.intro{
-    min-height: 100vh;
-    background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%), url(../img/background.jpeg);
-    background-size: cover;
-    text-align: center;
+.intro {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .intro__title{
-    position: absolute;
-    width: 483px;
-    height: 188px;
-    left: 719px;
-    top: 237px;
     font-family: 'ReformaGroteskBoldC';
     font-style: normal;
     font-weight: 700;
     font-size: 150px;
     line-height: 125%;
     color: #DB3138;
-    }
+}
 .intro__rhombs {
-    position: absolute;
-    width: 146px;
-    height: 14px;
-    left: 887px;
-    top: 430px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin-bottom: 40px;
 }
 .intro__subtitle{
-    position: absolute;
-    width: 437px;
-    height: 96px;
-    left: 742px;
-    top: 486px;
+    max-width: 440px;
     font-family: 'ReformaGroteskMediumC';
     font-size: 40px;
     line-height: 48px;
     color: #FFFFFF;
+    margin-bottom: 40px;
 }
 .intro__button {
-    position: absolute;
-    width: 144px;
-    height: 61px;
-    left: 888px;
-    top: 622px;
+    padding: 15px;
     font-family: "ReformaGroteskDemiC";
     font-style: normal;
     font-weight: 600;
@@ -155,38 +120,123 @@
     background-color: #DB3138;
     border: none;
 }
-
 /* Intro styles end */
 
-
-/* Inform styles start */
-
-.inform {
+/* Info styles start */
+.info {
+    margin: 0;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
-.inform__block {
-    display: inline-block;
+.info__block {
+    margin-top: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-top: solid 1px rgba(255, 255, 255, 0.5);
     border-bottom: solid 1px rgba(255, 255, 255, 0.5);
     font-family: "ReformaGroteskDemiC";
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    width: 33%;
+    width: 33.33%;
 }
-.inform__block-bordered {
-  border-right: solid 1px rgba(255, 255, 255, 0.5);
-  border-left: solid 1px rgba(255, 255, 255, 0.5);
+.info__block-bordered {
+    border-right: solid 1px rgba(255, 255, 255, 0.5);
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
 }
-.inform__block-title {
+.info__block-title {
     font-size: 18px;
     line-height: 140%;
     color: #FFFFFF;
 }
-.inform__block-text {
+.info__block-text {
     font-size: 24px;
     line-height: 140%;
     color: #DB3138;
+    max-width: 300px;
+}
+/* Info styles end */
+
+/* Section-first styles end */
+
+
+/* Achievement styles start */
+.section-achievement {
+    max-width: 1920px;
+    min-height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 180px;
+    background-color: #1E1E1E;
+    background-size: cover;
+    display: flex;
+    font-family: "ReformaGroteskDemiC";
+    font-style: normal;
+    color: #FFFFFF;
 }
 
-/* Inform styles end */
+/* Description styles start */
+.achievement__description {}
+.achievement__description-title {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 73px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    max-width: 640px;
+}
+.achievement__description-rhombs {
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.achievement__description-subtitle {
+    font-family: 'ReformaGroteskMediumC';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    max-width: 530px;
+}
+/* Description styles end */
+
+/* Block styles start */
+.achievement__leftblocks {}
+.achievement__rightblocks {
+    margin-top: 40px;
+}
+.achievement__block {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px 20px 35px;
+    text-align: center;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+}
+.achievement__number {
+    color: #DB3138;
+    font-size: 52px;
+    line-height: 73px;
+}
+.achievement__number span {
+    font-size: 24px;
+    line-height: 34px;
+}
+.achievement__number-text {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 300px;
+}
+.achievement__image {
+    margin-bottom: 27px;
+}
+/* Block styles end */
+
+/* Achievement styles end */

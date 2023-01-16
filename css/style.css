@@ -39,20 +39,34 @@
 	font-style: normal;
 }
 
+body, html {
+    background-color: #141414;
+    font-family: "ReformaGroteskMediumC";
+}
 .rhomb-position {
     margin-right: 30px;
 }
-
+.arrow-right {
+    background-image: url("../img/icons/arrow_right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.arrow-left {
+    background-image: url("../img/icons/arrow_left.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 /* Section-first styles start */
 .section-first {
-    max-width: 1920px;
-    min-height: 100%;
-    margin: 0 auto;
-    justify-content: center;
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%), url(../img/background.jpeg);
     background-size: cover;
     text-align: center;
+    justify-content: center;
 }
 
 /* Header styles start */
@@ -71,7 +85,6 @@
     margin-right: 40px;
 }
 .header__link{
-    font-family: 'ReformaGroteskMediumC';
     font-size: 24px;
     line-height: 120%;
     letter-spacing: 0.02em;
@@ -90,7 +103,6 @@
 }
 .intro__title{
     font-family: 'ReformaGroteskBoldC';
-    font-style: normal;
     font-weight: 700;
     font-size: 150px;
     line-height: 125%;
@@ -101,7 +113,6 @@
 }
 .intro__subtitle{
     max-width: 440px;
-    font-family: 'ReformaGroteskMediumC';
     font-size: 40px;
     line-height: 48px;
     color: #FFFFFF;
@@ -110,7 +121,6 @@
 .intro__button {
     padding: 15px;
     font-family: "ReformaGroteskDemiC";
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 140%;
@@ -164,23 +174,22 @@
 /* Section-first styles end */
 
 
-/* Achievement styles start */
+/* Section-achievement styles start */
 .section-achievement {
-    max-width: 1920px;
-    min-height: 100%;
-    margin: 0 auto;
     justify-content: center;
     padding-top: 180px;
-    background-color: #1E1E1E;
-    background-size: cover;
     display: flex;
     font-family: "ReformaGroteskDemiC";
-    font-style: normal;
     color: #FFFFFF;
 }
-
+.achievement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 /* Description styles start */
-.achievement__description {}
+.achievement__description {
+}
 .achievement__description-title {
     font-weight: 600;
     font-size: 52px;
@@ -194,7 +203,6 @@
     margin-top: 40px;
 }
 .achievement__description-subtitle {
-    font-family: 'ReformaGroteskMediumC';
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -239,4 +247,130 @@
 }
 /* Block styles end */
 
-/* Achievement styles end */
+
+/* Slider styles start */
+.section-slider {
+    padding-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.slider-nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider__slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: center;
+}
+.slide__text-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    font-family: "ReformaGroteskDemiC";
+    color: #FFFFFF;
+    background-color: #DB3138;
+}
+.slide__text-block p {
+    padding: 10px 5px;
+    width: 70%;
+}
+.slider__slide img {
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+/* Slider styles end */
+
+/* Section-achievement styles end */
+
+
+/* Section-advantages styles start */
+.section-advantages {
+    justify-content: center;
+    padding-top: 180px;
+    display: flex;
+    font-family: "ReformaGroteskDemiC";
+    color: #FFFFFF;
+}
+/* advantages styles start */
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.advantages__block {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 530px;
+}
+.advantages__block-text {
+}
+.advantages__block-text .title {
+    display: flex;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    align-items: center;
+}
+.advantages__block-text .title h3 {
+    margin-left: 30px;
+}
+.advantages__block-text .text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+}
+.advantages__block-rhombs {
+    margin: 40px 0;
+}
+/* advantages styles end */
+
+/* slider styles start */
+.advantages__slider {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.advantages__slider-slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.slide__box {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.slide__box-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    max-width: 430px;
+}
+/* Slider styles end */
+
+/* Section-advantages styles end */

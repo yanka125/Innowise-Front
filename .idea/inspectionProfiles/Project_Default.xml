@@ -1,0 +1,57 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssNoGenericFontName" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="12">
+            <item index="0" class="java.lang.String" itemvalue="pyflakes" />
+            <item index="1" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="2" class="java.lang.String" itemvalue="python-dotenv" />
+            <item index="3" class="java.lang.String" itemvalue="asgiref" />
+            <item index="4" class="java.lang.String" itemvalue="pycodestyle" />
+            <item index="5" class="java.lang.String" itemvalue="flake8" />
+            <item index="6" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="7" class="java.lang.String" itemvalue="django" />
+            <item index="8" class="java.lang.String" itemvalue="mccabe" />
+            <item index="9" class="java.lang.String" itemvalue="isort" />
+            <item index="10" class="java.lang.String" itemvalue="pytz" />
+            <item index="11" class="java.lang.String" itemvalue="djangorestframework" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyProtectedMemberInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnreachableCodeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="type.with_ui" />
+          <option value="Innotter.User.models.User.DoesNotExist" />
+          <option value="Innotter.settings" />
+          <option value="Innotter.Blog.models.User" />
+          <option value="Innotter.Blog.views.User" />
+          <option value="Innotter.Blog.models.Page.objects" />
+          <option value="Innotter.Blog.models.Tag.objects" />
+          <option value="Innotter.Blog.custom_fields.User" />
+          <option value="Innotter.Blog.serializers.User" />
+          <option value="Innotter.Blog.models.Post.objects" />
+          <option value="blog.models.Tag.objects" />
+          <option value="blog.models.Page.objects" />
+          <option value="blog.models.Post.objects" />
+          <option value="botocore.exceptions" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnusedLocalInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+  </profile>
+</component>

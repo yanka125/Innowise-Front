@@ -282,6 +282,7 @@ body {
 .slide__text-block p {
     text-align: center;
     padding: 0 25px;
+    width: 70%;
     transform: translateY(+50%);
 }
 .slider__slide img {
@@ -396,7 +397,6 @@ body {
     padding: 15px 0 15px 20px;
     border: 1px solid #898989;
     background-color: #141414;
-    justify-content: space-between;
 }
 .section-contacts .contacts__form-block {
     margin-top: 25px;

@@ -102,7 +102,6 @@ body {
 }
 .intro__title{
     font-family: 'ReformaGroteskBoldC';
-    font-weight: 700;
     font-size: 150px;
     line-height: 125%;
     color: #DB3138;
@@ -120,7 +119,6 @@ body {
 .intro__button {
     padding: 15px;
     font-family: "ReformaGroteskDemiC";
-    font-weight: 600;
     font-size: 24px;
     line-height: 140%;
     letter-spacing: 0.05em;
@@ -187,7 +185,6 @@ body {
 }
 /* Description styles start */
 .achievement__description-title {
-    font-weight: 600;
     font-size: 52px;
     line-height: 73px;
     letter-spacing: 0.05em;
@@ -199,7 +196,6 @@ body {
     margin-top: 40px;
 }
 .achievement__description-subtitle {
-    font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.03em;
@@ -212,7 +208,6 @@ body {
     margin-top: 40px;
 }
 .achievement__block {
-    font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     display: flex;
@@ -269,18 +264,25 @@ body {
 }
 .slide__text-block {
     display: flex;
+    align-self: center;
+    justify-self: center;
     align-items: center;
     justify-content: center;
-    justify-self: center;
-    align-self: center;
-    width: 80%;
-    font-family: "ReformaGroteskDemiC";
+    width: 85%;
+    font-family: 'ReformaGroteskDemiC';
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     color: #FFFFFF;
     background-color: #DB3138;
+    transform: translateY(-50%);
 }
 .slide__text-block p {
-    padding: 10px 5px;
-    width: 70%;
+    text-align: center;
+    padding: 0 25px;
+    transform: translateY(+50%);
 }
 .slider__slide img {
     overflow: hidden;
@@ -312,7 +314,6 @@ body {
 }
 .advantages__block-text_title {
     display: flex;
-    font-weight: 600;
     font-size: 32px;
     line-height: 140%;
     letter-spacing: 0.05em;
@@ -324,7 +325,6 @@ body {
     margin-left: 30px;
 }
 .advantages__block-text_text {
-    font-weight: 500;
     font-size: 24px;
     line-height: 120%;
     letter-spacing: 0.03em;
@@ -353,7 +353,6 @@ body {
     padding-top: 40px;
 }
 .slide__box-text {
-    font-weight: 600;
     font-size: 18px;
     line-height: 140%;
     text-align: center;
@@ -372,7 +371,6 @@ body {
     justify-content: center;
     color: #FFFFFF;
     font-family: 'ReformaGroteskDemiC';
-    font-style: normal;
 }
 .section-contacts .contacts {
     display: flex;
@@ -388,12 +386,16 @@ body {
     margin-bottom: 60px;
     margin-top: 40px;
 }
-.section-contacts .contacts__form-name{
+.section-contacts .contacts__form-name {
+    font-family: 'ReformaGroteskDemiC';
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     width: 46%;
     padding: 15px 0 15px 20px;
     border: 1px solid #898989;
     background-color: #141414;
-    text-transform: uppercase;
     justify-content: space-between;
 }
 .section-contacts .contacts__form-block {
@@ -402,6 +404,10 @@ body {
     justify-content: space-between;
 }
 .section-contacts .block__text {
+    font-family: 'ReformaGroteskDemiC';
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
     width: 75%;
     padding: 15px 0 120px 20px;
     text-transform: uppercase;
@@ -413,29 +419,21 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-.section-contacts .block__social-telegram {
-    background-image: url("../img/icons/telegram.svg");
+.section-contacts .social__button {
     background-position: center;
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
     border: 1px solid #898989;
+}
+.section-contacts .block__social-telegram {
+    background-image: url("../img/icons/telegram.svg");
 }
 .section-contacts .block__social-youtube {
     background-image: url("../img/icons/youtube.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #898989;
 }
 .section-contacts .block__social-vk {
     background-image: url("../img/icons/vk.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #898989;
 }
 .section-contacts .contacts__form-links {
     margin-top: 25px;
@@ -444,6 +442,7 @@ body {
     align-items: center;
 }
 .section-contacts .links__submit {
+    font-family: 'ReformaGroteskDemiC';
     font-size: 24px;
     line-height: 140%;
     text-align: center;
